@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #050838;
+    padding: 50px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 2.5em;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    width: 100%;
+    margin: auto; 
+    gap: 15px;
+    justify-items: center; 
+}
+.image-container a {
+    display:block;
+    width: 100%;
+}
+.gallery-image {
+    width: 100%; 
+    height: auto; 
+    max-height: 300px;
+    object-fit: cover; 
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+
+.gallery-image:hover {
+    transform: scale(1.1);
+    opacity: 0.8; 
+}
+
+
+
